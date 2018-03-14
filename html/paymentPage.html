@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+	
+	  <link rel="stylesheet" href="../css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/paymentPage.css" type="text/css"/>	
+	<script src="../js/jquery-3.2.1.js" type="text/javascript">
+    </script>
+    <script src="../js/bootstrap.js" type="text/javascript">
+    </script>
+	<script src="../js/paymentPage.js" type="text/javascript"></script>
+    
+</head>
+<body>
+              <!-- Header start -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid  ">
+        <div class="navbar-header">
+                <a class="navbar-brand" href="../html/startPage.html"><img src="../MB_logo_red_1.png" class="logo"></a>
+        
+        </div>
+            
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Meny
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                              <li><a href="#">Om oss</a></li>
+                              <li><a href="#">Kundtjänst</a></li>
+                              <li><a href="#">Kontakt Oss</a></li>
+                              <li><a href="adminPage.html">Admin</a></li>
+                    </ul>
+            </li>
+        </ul>
+      
+    <form class="navbar-form navbar-right">
+        <div class="input-group">
+            <input type="text" class="inputField" id="searchInputField" placeholder="Search" onkeyup="searchMovie();">
+            <a href="cartPage.html" style="text-decoration: none;">
+                <button type="button" class="btn btn-primary" href="cartPage.html">Varukorg
+                    <span class="badge" id="cartBadge" data-count=""></span>
+                </button>
+            </a>
+        </div>
+        <span id="searchResult"></span>
+    </form>
+  </div>
+       
+</nav>
+    <!-- Header end -->
+
+	<div id="paymentContainer">
+
+
+<div id="payment">
+    <h1 class="rubrik">Betala</h1> 
+    <h4 class="spanClass1">Din beställning: </h4>
+
+        
+<div id="payNow" class="col-md-4 col-xs-6">
+    </div>
+    
+
+    
+</div>
+        <div id="sumNow" class="col-md-4 col-xs-6">
+    </div>
+<div id="flexContainer">
+<div id="yourInformation" class="col-md-6">
+	
+	<h1  class="betala">Kunduppgifter</h1>
+    <form>
+			 <ul>
+                        <li><input type="text" class="form-control"  id="resultOfFirstName" placeholder="förnamn" required></li>
+
+                        <li><input type="text" class="form-control"  id="lastName" placeholder="efternamn" required></li>
+
+                        <li><input type="tel" class="form-control" name="telephoneNumber" placeholder="telefonnummer" id="resultOfPhoneNumber" size="50" required/></li>  
+
+                        <li><input type="email" class="form-control" placeholder="e-mail" name="email" id="resultOfEmailAddress" size="50" required/></li> 
+                </ul>
+    </form>
+			
+    </div>
+    
+	<div id="paymentMethod" class="col-md-6">
+		
+		<h1 class="betala"> Betalningsalternativ </h1>
+        
+    
+      <label>
+        <input type="radio" class="option-input radio" name="example" value="payPal" checked> PayPal</label><br>
+
+        <label>
+        <input type="radio" class="option-input radio" name="example" value="klarna"> Klarna</label><br>
+       
+  <div>
+    
+	  <label>
+        <input type="radio" class="option-input radio" name="example" value="KreditKort"> Kreditkort</label>
+
+<select class="form-control" id="creditCardInfo" >
+        <option selected>Kreditkortstyp</option>
+        <option value="1">Visa</option>
+        <option value="2">Mastercard</option>
+        <option value="3">American express</option>
+      </select>
+  
+	</div>
+
+ <input type="creditCard" class="form-control" placeholder="Kreditkortnummer" name="creditCard"/> 
+	<div class="form-row align-items-center">
+    <div id="creditCardOption" class="col-md-3">			 
+      <select  class="form-control" class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+        <option selected>Månad</option>
+        <option value="1">Decemberg</option><option value="2">Januari</option><option value="3">Februari</option><option value="4">Mars</option><option value="5">April</option><option value="6">Maj</option><option value="7">Juni</option><option value="8">Juli</option><option value="9">Augusti</option><option value="10">September</option><option value="11">Oktober</option><option value="12">November</option>
+      </select>
+    
+   
+  </div>
+  <div class="form-row align-items-center">
+    <div id="creditCardOption" class="col-md-9">			 
+      <select class="form-control" class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+        <option selected>År</option>
+        <option value="1">2017</option><option value="2">2018</option><option value="3">2019</option><option value="4">2020</option><option value="5">2021</option><option value="6">2022</option>
+      </select><br>
+    </div>
+   
+  </div>
+  </div>
+			<input id="cvc" type="cvc" class="form-control" placeholder="CVC" name="cvc"/>
+			
+
+			<input id="checkBox" type="checkbox" value="Condition"> Jag godkänner användarvillkoren<br>
+	
+	
+	<button type="button" id="buttonBuy" class="span4 proj-div buyMovie" data-toggle="modal" data-target="#GSCCModal">Köp</button>
+	<div id="buttonModal">
+<div id="GSCCModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+ <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <h4 class="modal-title" id="myModalLabel">TACK FÖR DIN BESTÄLLNING!</h4>
+      </div>
+      <div class="modal-body">Stort tack för du handlat av MoviebreakerZ, betalningen har överförts. Beställningsnummer: 11104000441395. <br> Leverans inom 5-10 minuter<br>Du kan se dina nuvarandra beställningar under mitt konto</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Stäng</button>
+      </div>
+    </div>
+  </div>
+</div>
+			
+</div>
+
+
+    </div>
+        </div>	
+        
+        <footer>
+	<a href="#">Användarvillkor</a>
+	<a href="#">Sekretess</a>
+	<a href="#">Cookie-inställningar</a>
+	<a href="#">Presentkort</a>
+	<a href="#">Jobba hos oss</a>
+	</footer>
+    
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/productPage.css" type="text/css"/>	
+	<script src="../js/jquery-3.2.1.js" type="text/javascript">
+    </script>
+    <script src="../js/bootstrap.js" type="text/javascript">
+    </script>
+	<script src="../js/productPage.js" type="text/javascript"></script>
+
+</head>
+<body>
+     <!-- Container for the entire body -->
+    <div id="startContainer">
+        
+            <!-- Header bootstrap start -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid  ">
+        <div class="navbar-header">
+                <a class="navbar-brand" href="../html/startPage.html"><img src="../MB_logo_red_1.png" class="logo"></a>
+        
+        </div>
+            
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Meny
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                              <li><a href="#">Om oss</a></li>
+                              <li><a href="#">Kundtjänst</a></li>
+                              <li><a href="#">Kontakt Oss</a></li>
+                              <li><a href="adminPage.html">Admin</a></li>
+                    </ul>
+            </li>
+        </ul>
+      
+    <form class="navbar-form navbar-right">
+        <div class="input-group">
+            <input type="text" class="inputField" id="searchInputField" placeholder="Search" onkeyup="searchMovie();">
+            <a href="cartPage.html" style="text-decoration: none;">
+                <button type="button" class="btn btn-primary" href="cartPage.html">Varukorg
+                    <span class="badge" id="cartBadge" data-count=""></span>
+                </button>
+            </a>
+        </div>
+        <span id="searchResult"></span>
+    </form>
+      
+  </div>
+</nav>
+        <div id="searchResult"></div>
+        
+        
+        
+        <footer id="footerId">
+	<a href="#">Användarvillkor</a>
+	<a href="#">Sekretess</a>
+	<a href="#">Cookie-inställningar</a>
+	<a href="#">Presentkort</a>
+	<a href="#">Jobba hos oss</a>
+	</footer>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,370 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+/* search function css starts */
+#searchInputField{
+    margin-right: 50px;
+    
+}
+
+#searchResult{
+    position: absolute;
+    margin-left: -40px;
+    width: 400px;
+}
+
+#searchResult ul li img{
+    width: 50px; 
+}
+
+
+#searchResult ul li{
+    list-style: none;
+    padding: 5px;
+    background-color: #222222;
+}
+
+#searchResult ul li:hover{
+    background-color: grey;
+
+}
+
+.stext{
+    margin: 5px;
+    font-size: 12px;
+}
+
+#searchResult ul li a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.inputField{
+    width: 200px;
+    color: black;
+    border-radius: 10px;
+    border: 0px;
+    padding: 5px;
+}
+
+.inputField:focus {
+    outline: none;
+    }
+
+/* search function css ends */
+
+
+#divLi {
+    height: 50px;
+    width: 50px;
+}
+
+footer {
+	height:100px;
+	text-align:center;
+	padding-top:25px;
+}
+
+footer > a{
+	height:100px;
+	text-align:center;
+	padding: 20px;
+    
+}
+
+a {
+	color:#9d9d9d;
+	text-decoration:none;
+}
+
+a:hover{
+    color: white;
+}
+
+#startContainer {
+left:0; 
+right:0;  
+top:0;
+margin: 0;
+padding: 0;
+display:flex;
+flex: wrap;
+flex-direction: column; 
+width: 100%;
+}
+
+/*Start Bootstrap lovisa Header css*/
+
+.logo{ 
+    height: 30px;
+    
+}
+
+.cartSpan{
+    font-family: sans-serif;
+    
+}
+.glyphicon-shopping-cart{
+    margin-right: 30px;
+}
+
+.navbar-brand{
+    margin-top: -2px;
+    
+}
+
+.navbar{
+    border-radius: 0px;
+}
+
+.container-fluid{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dropdown-menu > li > a{
+    color: #6b6b6b;
+}
+
+.navbar-inverse{
+    background-color: #222222a3;
+    border: none;
+    
+}
+
+.shopping_cart{
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+/*End Bootstrap lovisa Header css*/
+#headerId > .col-xs-1{padding-right: 0; padding-left: 5px;}
+
+
+#headerId {
+	 height:50px;
+	 color:white;
+	 background-color:black;
+	 justify-content:center; 
+	 align-items: center;
+      margin:0;
+}
+
+.spanInCategoryOverallContainer {
+    height: 70px;
+    width: 150px;
+	font-size:25px;
+	padding-top:40px;
+	padding-left:50px;
+	
+}
+
+.productsInCategoryOverallContainer {
+    width:100%;
+	
+}
+
+.backgroundImg {
+        left:0; 
+        right:0; 
+        padding: 0;
+        margin: 0;
+        height: 400px;
+	}
+
+#imgId { 
+        border: none;
+        height: 400px;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+}
+    
+.centered {
+   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+}
+.movieTitle {
+    display:inline-block;
+    vertical-align:middle;
+    font-size: 30px;
+    line-height: 0px;
+}
+   
+h1 {
+		height:50px;
+        font-size: 25px;
+        font-family: monospace;
+        margin:0;   
+	}    
+    
+.btn-circle {
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      padding: 6px 0;
+      font-size: 12px;
+      line-height: 1.428571429;
+      border-radius: 15px;
+      background-color: black;
+      color: white;
+      border: none;
+}
+
+.btn-circle:hover {
+        color: black;
+        background-color: white;
+    }
+
+.flexContainers {
+    padding: 5px;
+    margin: 0;
+    text-align: left;
+    vertical-align: middle;
+}
+ 
+
+.carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+}
+
+/*Carousel*/
+.imgClass {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    display: inline-block !important;
+	padding:15px;
+}
+
+.imgClass:hover {
+    transform: scale(1.03,1.03) ;
+    transition-duration: 0.3s;
+
+}
+
+.item {
+    background-color: black;
+    text-align:center;
+    position: relative;
+}
+
+
+.carousel-inner {
+	position:relative;
+	height: auto;
+    vertical-align: baseline;
+
+}
+
+.carousel-custom {
+      margin-top: 20px;
+}
+
+/*Start priset lägger sig över bilden plus hoverfunktion*/
+
+.moviePrice{
+    font-family: sans-serif;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: absolute;
+    bottom: 30px;
+    margin-left: -55px;
+    background-color: #222222a3;
+
+}
+
+.item {
+    position: relative;
+    transform: scale(1.05,1.05);
+
+}
+
+@media (max-width: 1333px) { 
+    
+    .imgClass {
+    width: 220px;
+    } 
+}
+
+@media (max-width: 1180px) { 
+    
+    .imgClass {
+    width: 190px;
+    } 
+}
+
+@media (max-width: 1030px) { 
+    
+    .imgClass {
+    width: 160px;
+    } 
+}
+
+@media (max-width: 880px) { 
+    
+    .imgClass {
+    width: 130px;
+    padding:5px;
+    } 
+    
+    .moviePrice{
+    bottom: 10px;
+    margin-left: -35px;
+
+    }
+}
+
+@media (max-width: 730px) { 
+    
+    .imgClass {
+    width: 100px;
+    padding:2px;
+    } 
+}
+
+@media (max-width: 580px) { 
+    
+    .imgClass {
+    width: 70px;
+    padding:2px;
+    } 
+    
+    .moviePrice {
+    display: none;
+
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+
+    .inputField{
+    width: 350px;
+    color: black;
+    border-radius: 10px;
+    border: 0px;
+    padding: 5px;
+    }
+    
+}
+
+
+
+
+/*End priset lägger sig över bilden plus hoverfunktion*/
+

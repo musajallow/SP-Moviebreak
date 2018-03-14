@@ -1,0 +1,143 @@
+tr:hover {
+    background-color: skyblue;
+    color: black;
+}
+
+body{
+    background-color: #293030;
+    color: white;
+    font-family: sans-serif;
+}
+
+#adminContainer {
+    display: flex;
+    position: relative;
+    margin-top: 100px;
+}
+footer {
+	height:100px;
+	text-align:center;
+	padding-top:25px;
+}
+
+a {
+	color:white;
+	padding:20px;
+	text-decoration:none;
+}
+
+
+.logo{ 
+    height: 30px;
+    margin: 10px;
+}
+
+#ordersResult {
+   border: 1px solid red;
+    position: absolute;
+}
+
+/* search function css starts */
+#searchInputField{
+    margin-right: 50px;
+    
+}
+
+#searchResult{
+    position: absolute;
+    margin-left: -40px;
+    width: 400px;
+}
+
+#searchResult ul li img{
+    width: 50px; 
+}
+
+
+#searchResult ul li{
+    list-style: none;
+    padding: 5px;
+    background-color: #222222;
+}
+
+#searchResult ul li:hover{
+    background-color: grey;
+
+}
+
+.stext{
+    margin: 5px;
+    font-size: 12px;
+}
+
+#searchResult ul li a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.inputField{
+    width: 350px;
+    color: black;
+    border-radius: 10px;
+    border: 0px;
+    padding: 5px;
+}
+
+/* search function css ends */
+
+
+#divLi {
+    height: 50px;
+    width: 50px;
+}
+
+footer {
+	height:100px;
+	text-align:center;
+	padding-top:25px;
+    position: absolute;
+}
+
+footer > a{
+	height:100px;
+	text-align:center;
+	padding: 20px;
+    
+}
+
+a {
+	color:#9d9d9d;
+	text-decoration:none;
+}
+
+a:hover{
+    color: white;
+}
+
+
+/*Start Bootstrap lovisa Header css*/
+
+.navbar-brand{
+    margin-top: -2px;
+    
+}
+
+.navbar{
+    border-radius: 0px;
+}
+
+.container-fluid{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dropdown-menu > li > a{
+    color: #6b6b6b;
+}
+.navbar-inverse{
+    background-color: #222222a3;
+    border: none;  
+}
+
+/*End Bootstrap lovisa Header css*/

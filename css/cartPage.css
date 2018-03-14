@@ -1,0 +1,243 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* search function css starts */
+#searchInputField{
+    margin-right: 50px;
+    
+}
+
+#searchResult{
+    position: absolute;
+    margin-left: -40px;
+    width: 400px;
+}
+
+#searchResult ul li img{
+    width: 50px; 
+}
+
+
+#searchResult ul li{
+    list-style: none;
+    padding: 5px;
+    background-color: #222222;
+}
+
+#searchResult ul li:hover{
+    background-color: grey;
+
+}
+
+.stext{
+    margin: 5px;
+    font-size: 12px;
+}
+
+#searchResult ul li a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.inputField{
+    width: 200px;
+    color: black;
+    border-radius: 10px;
+    border: 0px;
+    padding: 5px;
+}
+
+.inputField:focus {
+    outline: none;
+    }
+
+
+/* search function css ends */
+
+
+#divLi {
+    height: 50px;
+    width: 50px;
+}
+
+footer {
+	height:100px;
+	text-align:center;
+	padding-top:25px;
+}
+
+footer > a{
+	height:100px;
+	text-align:center;
+	padding: 20px;
+    
+}
+
+a {
+	color:#9d9d9d;
+	text-decoration:none;
+}
+
+a:hover{
+    color: white;
+}
+
+#startContainer {
+left:0; 
+right:0;  
+top:0;
+margin: 0;
+padding: 0;
+display:flex;
+flex: wrap;
+flex-direction: column; 
+width: 100%;
+}
+
+/*Start Bootstrap lovisa Header css*/
+
+.logo{ 
+    height: 30px;
+    
+}
+
+.cartSpan{
+    font-family: sans-serif;
+    
+}
+.glyphicon-shopping-cart{
+    margin-right: 30px;
+}
+
+.navbar-brand{
+    margin-top: -2px;
+    
+}
+
+.navbar{
+    border-radius: 0px;
+}
+
+.container-fluid{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dropdown-menu > li > a{
+    color: #6b6b6b;
+}
+
+.navbar-inverse{
+    background-color: #222222a3;
+    border: none;
+    
+}
+
+.shopping_cart{
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+/*End Bootstrap lovisa Header css*/
+
+li {
+    list-style: none;
+}
+
+.col-md-12 > ul {
+    padding: 0;
+}
+
+.productRow {
+    padding-top: 20px;
+}
+
+#movieContainer {
+    padding-left: 50px;
+}
+
+button {
+    color: black;
+}
+
+#mainContainer {
+    margin-top: 100px;
+}
+
+#mainContainer > h2 {
+    margin-left: 40px;
+}
+
+.glyphicon-trash:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.buyMovie {
+    -moz-box-shadow: 0px 0px 0px 2px #3dc21b;
+    /*-webkit-box-shadow: 0px 0px 0px 2px #3dc21b;*/
+    /*box-shadow: 0px 0px 0px 2px #3dc21b;*/
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #44c767), color-stop(1, #5cbf2a));
+    background: -moz-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+    background: -webkit-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+    background: -o-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+    background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#44c767', endColorstr='#5cbf2a',GradientType=0);
+    background-color: #44c767;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 20px;
+    border: 1px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 12px 37px;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    /*text-shadow: 0px 1px 0px #2f6627;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.buyMovie:hover {
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5cbf2a), color-stop(1, #44c767));
+background: -moz-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+background: -webkit-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+background: -o-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cbf2a', endColorstr='#44c767',GradientType=0);
+background-color: #5cbf2a;
+}
+
+.buyMovie:focus {
+    outline: none;
+    }
+
+@media screen and (min-width: 1024px) {
+
+    .inputField{
+    width: 350px;
+    color: black;
+    border-radius: 10px;
+    border: 0px;
+    padding: 5px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+     .titleCart{
+        padding-top: 100px;
+    }
+    
+}
